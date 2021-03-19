@@ -18,24 +18,12 @@ public class ServiceRegistrationAndDiscoveryServiceApplication {
 		SpringApplication.run(ServiceRegistrationAndDiscoveryServiceApplication.class, args);
 	}
 	
-	@RequestMapping("/refresh/{applicationName}")
+	@RequestMapping("/eurekaserver/test/{applicationName}")
 	public String refreshByApplicationName(
 			@PathVariable String applicationName) {
 		
-		
-		
-		
-//		List<ServiceInstance> serviceInstances = this.discoveryClient.getInstances(applicationName);
-//		
-//		serviceInstances.forEach(serviceInstance -> {
-//		    
-//			System.out.println("serviceInstance :" + serviceInstance);
-//		    
-//			doThreadPostActuatorRefresh(serviceInstance);
-//			
-//		});
-//		
 
+		System.out.println("Eureka Server /eurekaserver/test/" + applicationName );
 		
 		
 		return "OK";
